@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* task 1 */
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 24px;
+}
+
+.item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+}
+
+.item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item ul li {
+  background-color: #ffffff;
+  border: 1px solid #808080;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/*task 2*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: auto;
+  margin: 100px 156px;
+  max-width: 1440px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-img {
+  max-width: 360px;
+  max-height: 300px;
+  display: block;
+}
+
+/* task 3*/
+
+#name-input  {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080; 
+  border-radius: 4px;
+  color: 2E2F42;
+  padding-left: 16px;
+}
+
+/*task 4*/
+
+.login-form {
+  width: 450px;
+  height: 256px;
+}
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080; 
+  border-radius: 4px;
+  color: 2E2F42;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.login-form button {
+  border: none; 
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*task 5*/
+
+.widget button {
+  border: none; 
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
